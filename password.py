@@ -135,7 +135,7 @@ def generate_password(length=12, use_special_chars=True, use_uppercase=True):
     random.seed(seed_data)
 
     # Introduce random delay
-    time.sleep(random.uniform(0.001, 0.01))
+    random_delay = time.sleep(random.uniform(0.001, 0.01))
 
     characters = string.ascii_lowercase
     if use_uppercase:
@@ -160,7 +160,7 @@ use_uppercase = input("Use uppercase letters? (yes/no): ").lower() == 'yes'
 password, elapsed_time, seed_info = generate_password(length, use_special_chars, use_uppercase)
 print("Generated password:", password)
 print(f"Password generation took {elapsed_time:.6f} seconds\n\n\n")
-print("PLEASE SAVE THIS DATA. IT MAY HELP YOU RESTORE THE PASSWORD:")
+print("PLEASE SAVE THIS DATA. IT MAY HELP YOU RESTORE THE PASSWORD (MAYBE ONE DAY LOL):")
 print("Seed data used for generation:")
 for key, value in seed_info.items():
     print(f"{key}: {value}")
