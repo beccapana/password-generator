@@ -135,7 +135,7 @@ def generate_password(length=12, use_special_chars=True, use_uppercase=True):
     random.seed(seed_data)
 
     # Introduce random delay
-    random_delay = time.sleep(random.uniform(0.001, 0.01))
+    time.sleep(random.uniform(0.001, 0.01))
 
     characters = string.ascii_lowercase
     if use_uppercase:
