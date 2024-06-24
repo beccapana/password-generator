@@ -12,6 +12,7 @@ import requests
 import uuid
 import os
 
+#B
 def get_connection_type():
     connections = psutil.net_if_addrs()
     if 'eth0' in connections:  # check for wired connection
