@@ -153,7 +153,6 @@ def generate_password(length=12, use_special_chars=True, use_uppercase=True):
 
     return password, elapsed_time, seed_info
 
-# Example usage
 length = int(input("Enter password length: "))
 use_special_chars = input("Use special characters? (yes/no): ").lower() == 'yes'
 use_uppercase = input("Use uppercase letters? (yes/no): ").lower() == 'yes'
